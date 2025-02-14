@@ -1,0 +1,385 @@
+/* common css  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul,
+li {
+  list-style: none;
+  margin-bottom: 0;
+  display: inline;
+  padding-left: 0;
+  /* display: inline-block; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 0.8;
+  margin-bottom: 0px;
+}
+/* common css  */
+
+/* color root start  */
+:root {
+  --dark-blue: #282938;
+  --royal-blue: #2405f2;
+  --white: #ffffff;
+  --gray: #f4f6fc;
+  --yellow: #fcd980;
+  --tint-blue: #1c1e53;
+  --accent: #eef4fa;
+}
+/* color root end  */
+
+/* navbar section start  */
+.navbar {
+  background-color: var(--tint-blue);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.navbar .navbar-nav .nav-link {
+  color: #bbbbcb;
+  text-transform: capitalize;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0;
+  margin-right: 35px;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--white);
+}
+/* .navbar .navbar-nav .nav-link:active {
+    color: red;
+  } */
+.navbar .nav-contact-btn {
+  border: 1px solid rgba(244, 246, 252, 0.2);
+  background-color: transparent;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 16px 48px;
+  border-radius: 41px;
+  color: var(--white);
+  text-transform: capitalize;
+  margin: 16px 0;
+  transition: 0.5s;
+}
+.navbar .nav-contact-btn:hover {
+  background-color: var(--yellow);
+  color: var(--dark-blue);
+  border: 1px solid var(--yellow);
+}
+.navbar .navbar-toggler {
+  background-color: var(--white);
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+/* navbar section end */
+
+/* pricing section start  */
+#pricing {
+  padding-top: 220px;
+}
+#pricing .heading h1 {
+  font-family: "Manrope", serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 66px;
+  letter-spacing: -3%;
+  color: var(--dark-blue);
+  text-align: center;
+  margin-bottom: 16px;
+}
+#pricing .heading p {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--dark-blue);
+  text-align: center;
+  margin: 0 auto;
+  width: 550px;
+  opacity: 0.7;
+}
+#pricing .price_cart {
+  padding: 64px 48px 62px 48px;
+  background-color: var(--gray);
+  border-radius: 12px;
+  margin-top: 64px;
+  transition: all linear 0.3s;
+  position: relative;
+  z-index: 1;
+}
+#pricing .overlay {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+#pricing .basic .price_cart .points li:nth-child(4),
+#pricing .basic .price_cart .points li:nth-child(5) {
+  color: var(--dark-blue);
+  opacity: 0.7;
+}
+#pricing .basic .price_cart:hover .points li{
+    color: var(--white);
+}
+#pricing .price_cart:hover {
+  background-color: var(--tint-blue);
+}
+#pricing .price_cart:hover h1,
+#pricing .price_cart:hover .title h3,
+#pricing  .price_cart:hover .points li,
+#pricing .price_cart:hover .title p {
+  color: var(--white);
+}
+#pricing .price_cart:hover a {
+  background-color: var(--yellow);
+  color: var(--dark-blue);
+}
+#pricing .price_cart:hover .price h6 {
+  color: var(--yellow);
+}
+#pricing .price {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+#pricing .price_cart {
+  height: 745px;
+}
+#pricing .price_cart h1 {
+  font-family: "Poppins", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+  color: var(--dark-blue);
+  display: inline;
+  transition: all linear 0.3s;
+  margin-right: 8px;
+}
+#pricing .price_cart h6 {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--royal-blue);
+  text-transform: capitalize;
+  display: inline;
+  transition: all linear 0.3s;
+}
+#pricing .price_cart .title h3 {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--dark-blue);
+  margin-bottom: 8px;
+  transition: all linear 0.3s;
+}
+#pricing .price_cart .title p {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--dark-blue);
+  opacity: 0.7;
+  margin-bottom: 78px;
+  transition: all linear 0.3s;
+}
+#pricing .price_cart .points img {
+  margin-right: 12px;
+  height: 26px;
+  width: 18px;
+}
+#pricing .price_cart .points li {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--dark-blue);
+  display: block;
+  margin-bottom: 20px;
+  transition: all linear 0.3s;
+}
+#pricing .price_cart .price_btn {
+  text-align: center;
+  margin-top: 79px;
+}
+#pricing .price_cart a {
+  font-family: "Manrope", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--gray);
+  padding: 16px 77px;
+  background-color: var(--dark-blue);
+  border-radius: 41px;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+}
+
+/* pricing section end  */
+
+/* faq section start  */
+#faq {
+  padding: 128px 0;
+}
+#faq .left h1 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: var(--dark-blue);
+  width: 328px;
+  margin-bottom: 16px;
+}
+#faq a {
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--royal-blue);
+  opacity: 0.8;
+}
+#faq .accordion .accordion-header span {
+  margin-right: 59px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--royal-blue);
+  /* background-color: red; */
+  width: 37px;
+}
+#faq .accordion .accordion-header button {
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: var(--dark-blue);
+}
+#faq .accordion .accordion-body {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--dark-blue);
+}
+.accordion-button {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-body {
+  padding: 0 109px 16px 112px;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/plus-lg.svg);
+  transform: rotate(45deg);
+}
+.accordion-button::after {
+  background-image: url(../img/plus-lg.svg);
+}
+.accordion-item {
+  border: none;
+  border-bottom: 2px solid #ececf1;
+}
+.accordion-item:nth-child(5) {
+  border: none;
+}
+/* faq section end  */
+
+/* lets talk section start  */
+#lets-talk {
+  background-color: var(--tint-blue);
+  padding-top: 96px;
+}
+#lets-talk p {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--white);
+  margin-top: 23px;
+  opacity: 0.8;
+  width: 399px;
+  margin-bottom: 86px;
+}
+#lets-talk .num-mail {
+  background-color: var(--yellow);
+  padding: 17px 37px;
+}
+#lets-talk .num-mail h5 {
+  color: var(--dark-blue);
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+#lets-talk .num-mail h6 {
+  color: var(--dark-blue);
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+#lets-talk h1 {
+  font-family: "Poppins", serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 36px;
+  color: var(--white);
+  text-transform: capitalize;
+}
+#lets-talk i {
+  color: var(--white);
+  /* margin-right: 26px; */
+}
+#lets-talk a {
+  margin-right: 26px;
+}
+/* lets talk section end */
+
+/* footer section start  */
+#footer {
+  padding: 32px;
+}
+#footer li {
+  margin: 0 14px;
+}
+#footer li:last-child {
+  margin-right: 0;
+}
+#footer li:first-child {
+  margin-left: 0;
+}
+#footer a,
+#footer p {
+  margin-bottom: 0;
+  color: var(--dark-blue);
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 16px;
+}
+/* footer section end */
