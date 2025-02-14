@@ -1,2 +1,2 @@
-File Contents : HTML | CSS | BOOTSTRAP | Features: Multipage Design | 
+FILE CONTENT : HTML | CSS | BOOTSTRAP | FEATURES: Multipage Design | 
 
