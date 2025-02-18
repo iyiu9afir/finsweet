@@ -819,5 +819,9 @@ h6 {
   font-weight: 500;
   line-height: 28px;
   font-size: 16px;
+  transition: .5s;
+}
+#footer a:hover{
+  color: #2405f2;
 }
 /* footer section end */
