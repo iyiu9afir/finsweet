@@ -1,5 +1,28 @@
-@media (min-width: 575.98px){
-
-
-
+@media (min-width: 575.98px) {
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navbar-nav{
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar-collapse{
+    display: flex;
+    margin-top: 12px;
+  }
+  .navbar .navbar-nav .nav-link{
+    font-size: 13px;
+  }
+  .navbar .nav-contact-btn{
+    font-size: 13px;
+    padding: 7px 23px;
+  }
+  #banner .left-text {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  #banner .right-text {
+    text-align: center;
+  }
 }
