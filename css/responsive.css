@@ -25,4 +25,11 @@
   #banner .right-text {
     text-align: center;
   }
+
+  /* project section start  */
+ #view-project .view-project-left img
+ {
+  width: 100%;
+ }
+  /* project section end  */
 }
