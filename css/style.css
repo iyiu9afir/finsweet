@@ -822,7 +822,6 @@ h6 {
   transition: .5s;
 }
 #footer a:hover{
-  /* color: #2405f2; */
-  color: red;
+  color: #2405f2;
 }
 /* footer section end */
